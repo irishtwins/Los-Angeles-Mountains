@@ -1,0 +1,147 @@
+/* ********************* generic **********************************/
+body {
+    min-width: 400px;
+}
+
+ul {
+    padding: 0;
+}
+
+.centered {
+    text-align: center;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, .25);
+}
+
+/* ********************* main styles ******************************/
+.features {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px 0;
+}
+
+.features > .card {
+    display: inline-block;
+    width: 28vw;
+    height: 28vw;
+    background-position: center center;
+    background-size: cover;
+}
+
+.card-heading{
+    text-align: center;
+    padding-top: 12%;
+}
+
+
+.contact-img-form-container {
+    display: flex;
+}
+
+
+.text-container, .testimonial {
+    margin: 40px 25%;
+    display: inline-block;
+}
+
+.testimonial {
+    padding-left: 25px;
+    border-left: 1px solid black;
+}
+
+.testimonial-container{
+    background-color: antiquewhite;
+    margin-bottom: 25px;
+}
+
+.columns-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.column-container {
+    margin: 40px 15%;
+}
+
+.column-title {
+    border-bottom: 1px solid black;
+    padding-bottom: 24px;
+    margin-bottom: 24px ;
+}
+
+.column-2-image {
+    width: 100%;
+}
+
+.contact {
+    margin: 25px 0;
+}
+
+.contact-img-form-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* ********************* footer styles ******************************/
+footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.social-icon-container {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.social-media-icon {
+    width: 40px;
+}
+
+/********************** media queries ***********************************/
+@media screen and (max-width: 992px) {
+    .contact-image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features > .card {
+        width: 80vw;
+        height: 80vw;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .columns-container {
+        grid-template-columns: 1fr;
+    }
+
+    .text-container,
+    .testimonial {
+        margin: 25px 5%;
+    }
+
+    .column-container {
+        margin: 25px 5%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
